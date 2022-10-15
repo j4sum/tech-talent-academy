@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 - Task 5</title>
+    <script src="JavaScript/week7task5.js"></script>
+</head>
+<body>
+
+    <h1>Minimum wage calculator</h1>
+    <p>Select your age range below</p>
+
+    
+    <form onsubmit = "return analyseForm()">
+        <!-- Button 1-->
+        <input type="radio" id="radio1" name="wage" value="£4.81" checked>
+        <label for="wage">Age: 16-17</label><br>
+        <!-- Button 2-->
+        <input type="radio" id="radio2" name="wage" value="£6.83">
+        <label for="wage">Age: 18-20</label><br>
+        <!-- Button 3-->
+        <input type="radio" id="radio3" name="wage" value="£9.18">
+        <label for="wage">Age: 21-22</label><br>        
+        <!-- Button 4-->
+        <input type="radio" id="radio4" name="wage" value="£9.50">
+        <label for="wage">Age: 23+</label><br>  
+
+        <input type="submit" name="submitForm" value="Submit">
+    </form>
+    <br>
+    <input onclick="hideUnhide()" type="checkbox" id="display" name="display_text" value="" checked>
+    <label for="display_text">Right to work in the UK</label> <br>
+
+    <p id="edit_p">By ticking this box, you agree to provide supporting evidence.</p>
+
+
+</body>
+</html>
