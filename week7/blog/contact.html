@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <script src="javascript/script.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Blog Post</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <button onclick="myFunction()">Toggle dark mode</button>
+
+    <!-- contact form to allow user to email any query straight to the blog owner using mailto tag-->
+    <h3 class="heading">Contact Us</h3>
+
+    <div id="form">
+
+        <div class="container">
+            <!-- <form action="?" method="POST"> -->
+            <form onsubmit="return analyseForm()">
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="subject" id="subject" value="">
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject:</label>
+                    </div>
+
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" value="" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row" style="text-align:right;">
+                    <p><a href="mailto:sumeyya@techtalentstudent.academy?&subject=Hi%20Sumeyya&body=I%20love%20your%20blog!" target="_top">Send email</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer">
+        <p><strong>email:</strong> luzern@visitswitzerland.com | <strong>phone:</strong> +41 41 227 17 17 | <strong>address:</strong> Kapellbrücke, 6002 Luzern, Switzerland</p>
+    </div>
+
+</body>
+
+</html>

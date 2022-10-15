@@ -1,0 +1,161 @@
+ html,
+ body {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: white;
+     color: black;
+     font-size: 25px;
+ }
+ /* toggle css */
+ 
+ .dark-mode {
+     background-color: rgb(7, 70, 99, 0.658);
+     color: rgb(255, 248, 248);
+     font-size: 24px;
+ }
+ /* top navigation bar with menu links for each page of the website */
+ 
+ .topnav {
+     overflow: hidden;
+     background-color: rgba(7, 70, 99, 0.658);
+ }
+ 
+ .topnav a {
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+ }
+ 
+ .topnav a:hover {
+     background-color: rgb(255, 255, 255);
+     color: rgb(7, 70, 99, 0.658);
+ }
+ 
+ .topnav a.active {
+     background-color: rgba(27, 206, 230, 0.658);
+     color: white;
+ }
+ /* list css */
+ 
+ ul.no-bullets {
+     list-style-type: none;
+     margin: 0;
+     padding: 20px;
+ }
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ h2 {
+     text-align: center;
+ }
+ 
+ p {
+     padding: 40px;
+ }
+ 
+ a:link {
+     text-decoration: none;
+ }
+ 
+ .heading {
+     text-align: center;
+ }
+ /* image css */
+ 
+ .center {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     border-radius: 50%;
+ }
+ /* form css */
+ 
+ #form {
+     padding: 40px;
+ }
+ 
+ input[type=text],
+ select,
+ textarea {
+     width: 100%;
+     padding: 12px 20px;
+     border: 1px solid rgba(27, 206, 230, 0.658);
+     border-radius: 4px;
+     resize: vertical;
+ }
+ 
+ label {
+     padding: 12px 12px 12px 0;
+     display: inline-block;
+ }
+ 
+ input[type=submit] {
+     background-color: #fafafa;
+     color: black;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     float: right;
+ }
+ 
+ input[type=submit]:hover {
+     background-color: aqua;
+ }
+ 
+ .container {
+     border-radius: 5px;
+     background-color: rgb(7, 70, 99, 0.658);
+     padding: 20px;
+     color: white;
+ }
+ 
+ .col-25 {
+     float: left;
+     width: 25%;
+     margin-top: 6px;
+ }
+ 
+ .col-75 {
+     float: left;
+     width: 75%;
+     margin-top: 6px;
+ }
+ /* Clear floats after the columns */
+ 
+ .row:after {
+     content: "";
+     display: table;
+     clear: both;
+ }
+ /* footer css */
+ 
+ .footer {
+     position: relative;
+     padding: 10px;
+     text-align: center;
+     color: white;
+     background: rgb(7, 70, 99, 0.658);
+     margin-top: 10px;
+     width: 100%;
+ }
+ /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+ 
+ @media screen and (max-width: 600px) {
+     .col-25,
+     .col-75,
+     input[type=submit] {
+         width: 100%;
+         margin-top: 0;
+     }
+ }
