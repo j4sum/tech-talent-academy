@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandy Candy</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <h1>dandy candy</h1>
+
+    <!-- the table shows the sweet items available and there is a row for each sweet type available with corresponding price-->
+
+    <table id="alignment">
+        <tr>
+            <th>Item</th>
+            <th></th>
+            <th>Price(£)</th>
+        </tr>
+        <tr>
+            <td>Dandy Cane</td>
+            <td> - </td>
+            <td>3.50</td>
+        </tr>
+        <tr>
+            <td>Sweet as a Marshmellow</td>
+            <td> - </td>
+            <td>2.00</td>
+        </tr>
+        <tr>
+            <td>Jelly Belly</td>
+            <td> - </td>
+            <td>1.50</td>
+        </tr>
+        <tr>
+            <td>Egg it!</td>
+            <td> - </td>
+            <td>2.50</td>
+        </tr>
+        <tr>
+            <td>Sprinkle Twinkle</td>
+            <td> - </td>
+            <td>1.50</td>
+        </tr>
+        <tr>
+            <td>Sweet Hearts</td>
+            <td> - </td>
+            <td>1.85</td>
+        </tr>
+
+    </table>
+
+    <!-- form element contains different input fields and options for items to choose from. The user can also enter card details and then continue to checkout-->
+
+    <div class="container">
+        <form action="?" method="POST">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email..." required>
+
+            <label for="adr">Address</label>
+            <input type="text" id="adr" name="address" placeholder="Your address...">
+
+            <label for="item">Select Item:</label>
+            <select id="item" name="item">
+                <option value="item1">Dandy Cane</option>
+                <option value="item2">Sweet as a Marshmellow</option>
+                <option value="item3">Jelly Belly</option>
+                <option value="item4">Egg it!</option>
+                <option value="item5">Sprinkle Twinkle</option>
+                <option value="item6">Sweet Hearts</option>
+            </select>
+
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="cnum">Card number</label>
+            <input type="text" id="cnum" name="cardnumber" placeholder="111-222-333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <input type="submit" value="Continue to checkout">
+        </form>
+    </div>
+
+
+</body>
+
+</html>
